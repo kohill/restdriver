@@ -1,0 +1,28 @@
+{
+  "globalConfig": {
+    "expectedStatusCode": 200,
+    "request": {
+      "method": "post",
+      "contentType": "application/x-www-form-urlencoded",
+      "endpoint": "/oauth2/ausonkbfb50QxAYGV0h7/v1/token"
+    }
+  },
+  "TestCase1": {
+    "testDescription": "TestCase1 Test test",
+    "steps": {
+      "step1": {
+        "stepDescription": "Step1: Creates  something.",
+        "request": {
+          "queryParams": {
+            "grant_type": "credentials",
+            "client_id": "",
+            "client_secret": ""
+          }
+        },
+        "expectedResponse": {
+          "access_token": ""
+        }
+      }
+    }
+  }
+}

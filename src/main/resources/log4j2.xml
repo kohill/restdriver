@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+    <Properties>
+        <Property name="log-path">logs</Property>
+        <Property name="log-archive">log_archive</Property>
+    </Properties>
+
+    <Appenders>
+        <Console name="console-log" target="SYSTEM_OUT">
+            <PatternLayout
+                    pattern="|%level|%d{yyyy-MM-dd HH:mm:ss.SSS}|%t|%c{1}|%msg%n"/>
+        </Console>
+        <RollingFile name="restdriver-log"
+                     fileName="${log-path}/RestDriver/LOG-${date:MMddyyyy-HHmmss}.log"
+                     filePattern="${log-archive}/RestDriver_Archive/archived-LOG-%d{yyyy-MM-dd}.log">
+            <PatternLayout>
+                <pattern>
+                    %level|%d{yyyy-MM-dd HH:mm:ss.SSS}|%t|%c{1}|%msg|%n
+                </pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="restdriver.test" level="info">
+            <AppenderRef ref="restdriver-log" level="ALL"/>
+        </Logger>
+        <Root level="info">
+            <AppenderRef ref="console-log" level="all"/>
+        </Root>
+    </Loggers>
+
+</Configuration>
