@@ -1,9 +1,9 @@
 package examples;
 
-import com.healthedge.rest.RestDDContext;
-import com.healthedge.rest.data.RestDDAdapter;
-import com.healthedge.rest.driver.IResponse;
-import com.healthedge.rest.driver.model.RestDDModel;
+import com.companyname.rest.RestDDContext;
+import com.companyname.rest.data.RestDDAdapter;
+import com.companyname.rest.driver.IResponse;
+import com.companyname.rest.driver.model.RestDDModel;
 import org.testng.ITestContext;
 import org.testng.annotations.DataProvider;
 

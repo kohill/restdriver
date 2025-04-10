@@ -1,10 +1,10 @@
 package examples;
 
-import com.healthedge.soap.SoapContext;
-import com.healthedge.soap.data.SoapTestData;
-import com.healthedge.soap.data.SoapTestDataContext;
-import com.healthedge.rest.driver.HttpMethod;
-import com.healthedge.rest.driver.IResponse;
+import com.companyname.soap.SoapContext;
+import com.companyname.soap.data.SoapTestData;
+import com.companyname.soap.data.SoapTestDataContext;
+import com.companyname.rest.driver.HttpMethod;
+import com.companyname.rest.driver.IResponse;
 import io.restassured.path.xml.XmlPath;
 
 public class SoapExamples {

@@ -1,11 +1,11 @@
 package examples;
 
-import com.healthedge.rest.RestContext;
-import com.healthedge.rest.data.RestTestData;
-import com.healthedge.rest.data.RestTestDataContext;
-import com.healthedge.rest.driver.HttpMethod;
-import com.healthedge.rest.driver.IRequestSpec;
-import com.healthedge.rest.driver.IResponse;
+import com.companyname.rest.RestContext;
+import com.companyname.rest.data.RestTestData;
+import com.companyname.rest.data.RestTestDataContext;
+import com.companyname.rest.driver.HttpMethod;
+import com.companyname.rest.driver.IRequestSpec;
+import com.companyname.rest.driver.IResponse;
 import io.restassured.path.json.JsonPath;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;

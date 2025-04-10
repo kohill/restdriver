@@ -26,7 +26,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.healthedge.commons</groupId>
+            <groupId>com.companyname.commons</groupId>
             <artifactId>properties-util</artifactId>
             <scope>system</scope>
             <!--Not recommended to hard code path, sample-->
